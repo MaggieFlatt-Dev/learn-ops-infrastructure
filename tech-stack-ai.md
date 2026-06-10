@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Tech Stack (AI)
 
 ## 1. Run Questions
@@ -143,3 +144,6 @@ This is a Learning Management System (LMS) built for a software development boot
 From a user's perspective, the system centers on a dashboard that gives an at-a-glance view of student progress through the curriculum. Instructors can create and manage cohorts, assign students to teams, record assessment outcomes, and leave notes on individual students. The curriculum itself — books, projects, learning objectives, and timelines — is managed through dedicated views. Students get their own dashboard showing their personal goals, assessment status, a cohort calendar, and links to their GitHub repositories and capstone proposal forms. Charts powered by Chart.js give instructors visual summaries of assessment data across a cohort, and Slack notifications keep the team informed of key events without requiring them to stay in the app.
 
 Two distinct roles interact with the system differently. Instructors (staff) have access to the full application — cohort management, student records, assessment scoring, course authoring, and team assignment. Students have a narrower, read-focused view: they can see their own dashboard, check their learning goals, view their cohort calendar, and submit capstone-related forms, but they cannot see or modify other students' data or manage curriculum content. Authentication for both roles is handled via GitHub OAuth, which means every user logs in with their existing GitHub account rather than creating a separate password.
+=======
+AI overview
+>>>>>>> upstream/main
