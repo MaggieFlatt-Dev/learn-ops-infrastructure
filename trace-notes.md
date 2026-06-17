@@ -14,6 +14,6 @@
 
 ## Sequence Diagram
 
-[Excalidraw link](https://excalidraw.com/#...)
+[Excalidraw link](https://excalidraw.com/#json=7WCxH8GcTlntMeRqYRzbB,W09iS3AmBeDe1nNpzIQjfg)
 
 ![Diagram](./trace-diagram.png)
