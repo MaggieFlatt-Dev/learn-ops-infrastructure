@@ -28,4 +28,6 @@ Generate a ERD for the entire database as a mermaid erDiagram. The models are in
 
 
 
-## 5. Find Relationship Examples
+## 6. Find Relationship Examples
+
+Find an example of a one-to-one, one-to-many, and many-to-many relationship in the model files. Record the file path and field name for each

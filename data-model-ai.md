@@ -520,8 +520,20 @@ PostgreSQL writes the new row to the `learningapi_book` table and returns the au
 
 ## 4. Relationship Examples
 
-**One-to-one** (field name: )
+**One-to-one** (field name: `user`)
+- File: `LearningAPI/models/people/nssuser.py`, line 12
+- `user = models.OneToOneField(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)`
+- Each `NssUser` has exactly one Django `auth_user`, and each `auth_user` has at most one `NssUser`
+- Django enforces this with a unique constraint on the FK column
 
-**One-to-many** (field name: )
+**One-to-many** (field name: `course`)
+- File: `LearningAPI/models/coursework/book.py`, line 6
+- `course = models.ForeignKey("Course", on_delete=models.CASCADE, related_name="books")`
+- One `Course` can have many `Book`s, but each `Book` belongs to exactly one `Course`
+- This is the most common relationship type in the codebase — a plain `ForeignKey`
 
-**Many-to-many** (field name: )
+**Many-to-many** (field name: `objectives`)
+- File: `LearningAPI/models/people/assessment.py`, line 16
+- `objectives = models.ManyToManyField("LearningWeight", through='AssessmentWeight')`
+- An assessment can test many learning objectives, and a learning objective can appear on many assessments
+- The `through='AssessmentWeight'` means Django uses an explicit join table (`AssessmentWeight`) rather than creating one automatically — this is common when you want to add extra data to the relationship itself
